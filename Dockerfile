@@ -8,7 +8,7 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 RUN npm install -g http-server
 
-ADD index.html /usr/apps/hello-docker/index.html
-WORKDIR /usr/apps/hello-docker/
+ADD index.html /usr/apps/http/index.html
+WORKDIR /usr/apps/http/
 
 CMD ["http-server", "-s"]
